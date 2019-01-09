@@ -1,5 +1,7 @@
 function longestConsecutive(arr, k) {
 
+    if (arr.length === 0 || k < 1) return '';
+
     let stringList = [];
     let stringGroup = '';
 

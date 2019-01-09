@@ -11,12 +11,12 @@ function longestConsecutive(arr, k) {
             if (arr[i+j]) {
                 stringGroup += (arr[i+j]);
             } else {
-                return stringList.sort((a, b) => b.length - a.length);
+                return stringList.sort((a, b) => b.length - a.length)[0];
             }
         }
         stringList.push(stringGroup)
     }
-    return stringList.sort((a, b) => b.length - a.length);
+    return stringList.sort((a, b) => b.length - a.length)[0];
 }
 
 console.log(longestConsecutive(['hi', 'marbles', 'mittens', 'bye', 'lorem', 'ipsum', 'to', 'a', 'hippocampus'], 3))  // -> 'marblesmittensbye')

@@ -1,4 +1,9 @@
 def longest_Consecutive(arr, k)
+
+    if arr.length == 0 || k < 1
+        return ''
+    end
+
     string_list = []
 
     arr.each_cons(k) do |word|
